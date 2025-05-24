@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiCraft</title>
+    <link rel="stylesheet" href="styles-homepage.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="img/Logo.png" alt="Logo do Minecraft" class="logo">
+                <ul class="nav-links">
+                    <li><a href="homepage.html" class="active">Home</a></li>
+                    <li><a href="historia.html" >História e Galeria</a></li>
+                    <li><a href="perfil.html" >Meu perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <img src="img/Logo.png" alt="Logo do Minecraft" class="hero-logo">
+            <p class="hero-subtitle">Bem-vindo(a) à wiki mais completa sobre a franquia do Minecraft</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="O que você está procurando?">
+                <button class="search-button">Buscar</button>
+            </div>
+        </div>
+
+        <div class="informacao">
+            <h2>Eleve o seu conhecimento do universo Minecraft.</h2>
+            <p><strong>Explore abaixo!</strong></p>
+        </div>
+        <div class="categorias">
+            <div class="categorias-itens">
+                <img src="img/craft.jpg" alt="Receitas Minecraft" class="categorias-imagem">
+                <div class="categorias-content">
+                    <div class="categorias-titulo">
+                        <h3>Receitas</h3>
+                        <button class="botao-explorar" onclick="showConstructionMessage('Receitas')">Explorar</button>
+                    </div>
+                    <p>Descubra todas as receitas de crafting disponíveis no jogo.</p>
+                </div>
+            </div>
+            <div class="categorias-itens">
+                <img src="img/itens.jpg" alt="Itens Minecraft" class="categorias-imagem">
+                <div class="categorias-content">
+                    <div class="categorias-titulo">
+                        <h3>Itens</h3>
+                        <button class="botao-explorar" onclick="showConstructionMessage('Itens')">Explorar</button>
+                    </div>
+                    <p>Conheça todos os itens do jogo, suas propriedades e utilidades.</p>
+                </div>
+            </div>
+            <div class="categorias-itens">
+                <img src="img/criaturas.jpg" alt="Criaturas Minecraft" class="categorias-imagem">
+                <div class="categorias-content">
+                    <div class="categorias-titulo">
+                        <h3>Criaturas</h3>
+                        <button class="botao-explorar" onclick="showConstructionMessage('Criaturas')">Explorar</button>
+                    </div>
+                    <p>Aprenda sobre todos os mobs, amigáveis e hostis, presentes no jogo.</p>
+                </div>
+            </div>
+            <div class="categorias-itens">
+                <img src="img/bússula.jpg" alt="Biomas Minecraft" class="categorias-imagem">
+                <div class="categorias-content">
+                    <div class="categorias-titulo">
+                        <h3>Biomas</h3>
+                        <button class="botao-explorar" onclick="showConstructionMessage('Biomas')">Explorar</button>
+                    </div>
+                    <p>Explore os diferentes ambientes e paisagens de Minecraft.</p>
+                </div>
+            </div>
+
+            <div class="categorias-itens">
+                <img src="img/livro.jpg" alt="Curiosidades Minecraft" class="categorias-imagem">
+                <div class="categorias-content">
+                    <div class="categorias-titulo">
+                        <h3>Curiosidades</h3>
+                        <button class="botao-explorar" onclick="showConstructionMessage('Curiosidades')">Explorar</button>
+                    </div>
+                    <p>Descubra segredos e fatos interessantes sobre o mundo de Minecraft.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>WIKICRAFT</h3>
+                    <p>Sua fonte completa de informações sobre o universo de Minecraft. Explore, aprenda e divirta-se!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <a href="#">Sobre Nós</a>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Contato</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Redes Sociais</h3>
+                    <a href="#">Youtube</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Discord</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WIKICRAFT. Todos os direitos reservados.</p>
+                <p>Minecraft é uma marca registrada da Mojang Studios. Este site não é afiliado à Mojang Studios.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="constructionModal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal()">&times;</span>
+            <h2>Página em Construção</h2>
+            <p>A seção <span id="sectionName"></span> está sendo desenvolvida e estará disponível em breve!</p>
+            <br>
+            <button class="botao-explorar" onclick="closeModal()">Entendi</button>
+        </div>
+    </div>
+
+    <script src="script-homepage.js"></script>
+</body>
+</html>
